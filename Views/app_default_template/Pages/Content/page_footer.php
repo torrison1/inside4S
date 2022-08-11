@@ -31,7 +31,7 @@
         }
         else {
             var options = {
-                url: "/info/ajax_add_comment/",
+                url: "/content/info/ajax_add_comment/",
                 success: function(data) {
                     var obj = jQuery.parseJSON(data);
                     if (obj.status == "success") {
