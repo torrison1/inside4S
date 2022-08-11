@@ -1,0 +1,39 @@
+|=========================================================================================================================|
+|                   Inside 4S Basis by pure PHP 7 and JS/JQuery Front-End + Chatbots System                               |
+|=========================================================================================================================|
+
+Demo Website: https://chatbots.ikiev.biz/
+
+Login Page: https://chatbots.ikiev.biz/auth/page/login
+
+Demo Admin Panel: https://chatbots.ikiev.biz/inside/panel/admin
+
+|=================================================================|
+|   Test Demo Admin User                                          |
+|   Login: admin@inside0demo.ikiev.biz                            |
+|   Password: (by request)                                        |
+|=================================================================|
+
+Database: https://chatbots.ikiev.biz/inside/panel/database
+Project Files: https://chatbots.ikiev.biz/inside/panel/projectfiles
+
+==========================================================================================================================
+
+Interesting Links about pure PHP vs Frameworks:
+https://www.quora.com/Which-is-better-using-pure-PHP-or-Framework
+https://www.reddit.com/r/PHP/comments/234shb/pure_php_vs_using_a_framework/
+https://code.tutsplus.com/tutorials/should-you-use-a-php-framework-five-pros-and-cons--cms-28905
+
+Interesting Links about Open-Source Security:
+https://www.quora.com/Is-open-source-more-secure-than-proprietary-software
+
+=================================   Installation and Configure   =========================================================
+
+1. Git pull files
+2. Import Database from dump.sql (by request)
+3. Rename config_default.php to config.php and fill all variables
+4. Make folder "Uploads" in the root folder
+
+5. Register a user who will be an admin
+6. Insert user_id of this user and group_id = 1 in auth_users_groups table
+7. Try Inside Admin Panel by the Admin User
