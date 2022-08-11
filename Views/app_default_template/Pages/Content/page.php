@@ -55,7 +55,7 @@
 				<i aria-hidden="true" class="fa fa-hashtag"></i>
 				<?php foreach ($content_tags_arr as $tag) { ?>
 					<?php if($tag['content_id'] == $page_row['content_id']) { ?>
-						<a href="<?=$lang_link_prefix?>/info/tag/<?=$tag['name']?>"><?=$tag['name']?></a>
+						<a href="<?=$lang_link_prefix?>/content/info/tag/<?=$tag['name']?>"><?=$tag['name']?></a>
 					<?php } ?>
 				<?php } ?>
 				<?php if($username) echo " by <b>$username"; ?>

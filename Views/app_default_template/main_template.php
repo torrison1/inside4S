@@ -172,9 +172,6 @@
                     <li class="nav-item<?php if ($_SERVER['REQUEST_URI'] == '/') echo " active";?>">
                         <a class="nav-link" href="<?=$lang_link_prefix?>/"><?=$t->get('main_page');?></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/torrison1/inside4sandbox"><?=$t->get('GitHub');?></a>
-                    </li>
                     <li class="nav-item<?php if ($_SERVER['REQUEST_URI'] == '/content/info/feed') echo " active";?>">
                         <a class="nav-link" href="<?=$lang_link_prefix?>/content/info/feed"><?=$t->get('info');?></a>
                     </li>
@@ -201,7 +198,7 @@
                 Inside 4 : Pure Code
                 <small class="d-block mb-3 text-muted">
                     &copy; All right reserved
-                    <a href="<?=$lang_link_prefix?>/main/privacy">Usage Agreement</a>
+                    <a href="<?=$lang_link_prefix?>/website/main/privacy">Usage Agreement</a>
                 </small>
                 </div>
         </div>

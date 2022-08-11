@@ -56,7 +56,7 @@
                 <h4 class="it-mb-10">#hashtags</h4>
                 <ul>
                     <?php foreach($tags_arr as $tag) { ?>
-                        <li><a href="<?= $lang_link_prefix ?>/info/tag/<?= $tag['tags_name'] ?>"><?= $tag['tags_name'] ?></a></li>
+                        <li><a href="<?= $lang_link_prefix ?>/content/info/tag/<?= $tag['tags_name'] ?>"><?= $tag['tags_name'] ?></a></li>
                     <?php } ?>
                 </ul>
                 <form action="<?= $lang_link_prefix ?>/content/info/feed" method="get" class="showListFilterForm">
@@ -109,7 +109,7 @@
                                 <i class="fas fa-bookmark"></i>&nbsp;
                                 <?php foreach ($content_categories_arr as $content_tags) {
                                     if ($content_tags['content_id'] == $page['content_id']) { ?>
-                                        <a href="<?= $lang_link_prefix ?>/info/category/<?= $content_tags['alias'] ?>"><?= $content_tags['name'] ?></a>
+                                        <a href="<?= $lang_link_prefix ?>/content/info/category/<?= $content_tags['alias'] ?>"><?= $content_tags['name'] ?></a>
                                         &nbsp;
                                     <?php }
                                 } ?>
@@ -118,7 +118,7 @@
                                 <i aria-hidden="true" class="fa fa-hashtag"></i>&nbsp;
                                 <?php foreach ($content_tags_arr as $content_tags) {
                                     if ($content_tags['content_id'] == $page['content_id']) { ?>
-                                        <a href="<?= $lang_link_prefix ?>/info/tag/<?= $content_tags['name'] ?>"><?= $content_tags['name'] ?></a>
+                                        <a href="<?= $lang_link_prefix ?>/content/info/tag/<?= $content_tags['name'] ?>"><?= $content_tags['name'] ?></a>
                                     <?php }
                                 } ?>
                             </div>

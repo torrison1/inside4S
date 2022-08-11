@@ -19,7 +19,7 @@
 
 		setTimeout(function(){
 			if (!confirm('<?=$t->get('agreement_alert');?>')) {
-				location.href = '<?=$lang_link_prefix?>/main/privacy';
+				location.href = '<?=$lang_link_prefix?>/website/main/privacy';
 			};
 		}, 3000);
 

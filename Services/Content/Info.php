@@ -7,11 +7,11 @@ Class Info extends \Tools\CommonCore\SmartWebsiteService
     protected $per_page = 3;
 
     public function category($alias, $page = false) {
-        if ($page == 1) $this->website->redirect_301 ($this->data['lang_link_prefix'].'/info/category/'.$alias);
+        if ($page == 1) $this->website->redirect_301 ($this->data['lang_link_prefix'].'/content/info/category/'.$alias);
         $this->feed($page, 'cat', $alias);
     }
     public function tag($alias, $page = false) {
-        if ($page == 1) $this->website->redirect_301 ($this->data['lang_link_prefix'].'/info/tag/'.$alias);
+        if ($page == 1) $this->website->redirect_301 ($this->data['lang_link_prefix'].'/content/info/tag/'.$alias);
         $this->feed($page, 'tag', $alias);
     }
 
@@ -42,13 +42,13 @@ Class Info extends \Tools\CommonCore\SmartWebsiteService
             $this->data['pages_list_arr'] = $info_system->pages_list($page, $this->per_page, false, $filter_type, $alias);
             if ($filter_type == 'cat') {
                 $this->data['category_row'] = $info_system->get_categories_row($alias);
-                $this->data['page_uri'] = '/info/category/'.$alias;
+                $this->data['page_uri'] = '/content/info/category/'.$alias;
                 $this->data['seo_title'] = 'Content about '.$this->data['category_row']['categories_name'];
                 $this->data['seo_description'] = 'Some information about '.$this->data['category_row']['categories_name'];
             }
             if ($filter_type == 'tag') {
                 $this->data['tag'] = $alias;
-                $this->data['page_uri'] = '/info/tag/'.$alias;
+                $this->data['page_uri'] = '/content/info/tag/'.$alias;
                 $this->data['seo_title'] = 'Content about '.$alias;
                 $this->data['seo_description'] = 'Some information about '.$alias;
             }
